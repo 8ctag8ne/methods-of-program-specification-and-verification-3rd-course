@@ -1,0 +1,15 @@
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\bin\Debug\net9.0\lab-1.exe
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\bin\Debug\net9.0\lab-1.deps.json
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\bin\Debug\net9.0\lab-1.runtimeconfig.json
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\bin\Debug\net9.0\lab-1.dll
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\bin\Debug\net9.0\lab-1.pdb
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\lab-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\lab-1.AssemblyInfoInputs.cache
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\lab-1.AssemblyInfo.cs
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\lab-1.csproj.CoreCompileInputs.cache
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\lab-1.sourcelink.json
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\lab-1.dll
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\refint\lab-1.dll
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\lab-1.pdb
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\lab-1.genruntimeconfig.cache
+C:\Users\nazar\OneDrive\Рабочий стол\унік\methods-of-program-specification-and-verification-3rd-course\lab-1\obj\Debug\net9.0\ref\lab-1.dll
