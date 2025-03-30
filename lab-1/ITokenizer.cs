@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace AssemblerLexer
+namespace AssemblerLexerNamespace
 {
     public interface ITokenizer
     {

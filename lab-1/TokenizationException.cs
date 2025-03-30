@@ -1,6 +1,6 @@
 using System;
 
-namespace AssemblerLexer
+namespace AssemblerLexerNamespace
 {
     public class TokenizationException : Exception
     {
