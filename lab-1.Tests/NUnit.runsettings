@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+  <!-- NUnit adapter -->
+  <NUnit>
+    <NumberOfTestWorkers>4</NumberOfTestWorkers>
+    <ShadowCopy>false</ShadowCopy>
+    <Verbosity>Normal</Verbosity>
+    <InternalTraceLevel>Off</InternalTraceLevel>
+    <DefaultTimeout>60000</DefaultTimeout>
+    <WorkDirectory>..\TestResults</WorkDirectory>
+    <OutputXmlFile>TestResults.xml</OutputXmlFile>
+  </NUnit>
+  
+  <!-- Налаштування покриття коду -->
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0">
+        <Configuration>
+          <CodeCoverage>
+            <ModulePaths>
+              <Include>
+                <ModulePath>.*lab_1\.dll$</ModulePath>
+              </Include>
+              <Exclude>
+                <ModulePath>.*Tests\.dll$</ModulePath>
+              </Exclude>
+            </ModulePaths>
+            <Functions>
+              <Exclude>
+                <Function>.*\.Program::Main\(.*</Function>
+              </Exclude>
+            </Functions>
+            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <EnableStaticManagedInstrumentationRewriting>True</EnableStaticManagedInstrumentationRewriting>
+            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <AllowedUsers>AllUsers</AllowedUsers>
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
