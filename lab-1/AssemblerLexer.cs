@@ -10,14 +10,14 @@ namespace AssemblerLexerNamespace
     {
         private readonly IEnumerable<ITokenPattern> patterns;
         private readonly IColorTheme colorTheme;
-        private readonly bool throwOnError;
+        private bool throwOnError;
 
         public AssemblerLexer() 
             : this(new AssemblerPatternProvider(), new AnsiColorTheme(), false)
         {
         }
 
-        public AssemblerLexer(IPatternProvider patternProvider, IColorTheme colorTheme, bool throwOnError = false)
+        public AssemblerLexer(IPatternProvider patternProvider, IColorTheme colorTheme, bool throwOnError = true)
         {
             this.patterns = patternProvider.GetTokenPatterns();
             this.colorTheme = colorTheme;
@@ -47,7 +47,7 @@ namespace AssemblerLexerNamespace
                         tokens.Add(token);
                         position = newPosition;
                     }
-                    catch (Exception ex) when (throwOnError)
+                    catch (Exception ex)
                     {
                         throw new TokenizationException(
                             $"Error tokenizing at line {lineNumber + 1}, position {position}: {ex.Message}",
@@ -83,6 +83,11 @@ namespace AssemblerLexerNamespace
             // Handle unrecognized character as error
             if (position < line.Length)
             {
+                if (this.throwOnError)
+                {
+                    throw new Exception($"unrecognized character: {line[position]}");
+                }
+
                 return (new Token(TokenType.ERROR, line[position].ToString()), position + 1);
             }
 
@@ -143,7 +148,9 @@ namespace AssemblerLexerNamespace
 
         public bool ValidateCode(string code, out List<Token> errorTokens)
         {
+            this.throwOnError = false;
             errorTokens = FindTokensByType(code, TokenType.ERROR);
+            this.throwOnError = true;
             return !errorTokens.Any();
         }
 
